@@ -1,0 +1,8 @@
+#!/bin/bash
+date >> list_of_datanodes
+bin/hadoop dfsadmin -report > dfsstat.txt
+cat dfsstat.txt |grep 'Datanodes available' --color >> list_of_datanodes
+cat dfsstat.txt |grep 'Name:' --color >> list_of_datanodes
+rm -rf dfsstat.txt
+
+
