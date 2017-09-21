@@ -1,1 +1,4 @@
+# might give ouput for name node space finding 
 hadoop fs -df -h
+Filesystem                                 Size     Used  Available  Use%
+hdfs://host-192-168-114-48.td.local:8020  7.0 G  467.5 M     18.3 M    7%
